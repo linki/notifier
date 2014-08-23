@@ -1,0 +1,3 @@
+image: ruby2.0.0
+script:
+  - "cd /var/cache/drone/src/github.com/linki/notifier && bundle && bundle exec rake"
