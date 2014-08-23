@@ -10,12 +10,16 @@ class Notifier < BaseNotifier
   def some_event
     true
   end
+  
+  def self.notified_events
+    ['some_event']
+  end
 end
 
 class NotifierTest < Test::Unit::TestCase
   def setup
     # allow all events to be delivered
-    Notifier.stubs(:notify?).returns(true)
+    #Notifier.stubs(:notify?).returns(true)
   end
   
   def test_delegates_to_method_with_same_name
