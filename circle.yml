@@ -1,6 +1,6 @@
 machine:
   ruby:
-    version: 2.0.0-p451
+    version: 2.1.5
 test:
   override:
     - bundle exec rake
