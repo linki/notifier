@@ -1,0 +1,7 @@
+environment:
+  image: ubuntu
+  language: ruby
+  services:
+    - google/mysql
+build:
+  run: echo hello world
